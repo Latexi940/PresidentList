@@ -15,7 +15,7 @@ class PresidentListAdapter(context: Context, private val presidents: MutableList
         return presidents.size
     }
 
-    override fun getItem(p: Int): Any {
+    override fun getItem(p: Int): President {
         return presidents[p]
     }
 

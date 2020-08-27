@@ -4,20 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/infoView"
-        android:layout_width="369dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="15dp"
-        android:layout_marginEnd="20dp"
         android:padding="6dp"
         android:text="Tähän tulee ne pressan tiedot \n :D"
         android:textColor="#000000"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -31,5 +30,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/infoView" />
+
+    <TextView
+        android:id="@+id/hitView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:text="Hits: 0"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
