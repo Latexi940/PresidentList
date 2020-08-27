@@ -7,9 +7,11 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.TextView
 
-class PresidentListAdapter(context: Context, private val presidents: MutableList<President>): BaseAdapter() {
+class PresidentListAdapter(context: Context, private val presidents: MutableList<President>) :
+    BaseAdapter() {
 
-    private val inflater: LayoutInflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+    private val inflater: LayoutInflater =
+        context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
 
     override fun getCount(): Int {
         return presidents.size
